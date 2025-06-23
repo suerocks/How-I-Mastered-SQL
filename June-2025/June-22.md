@@ -8,7 +8,7 @@
 - Opened Terminal on Mac and navigated to the 'my-sql-learning' folder using cd
 - Ran the command 'docker-compose up -d'
 - Opened Docker to confirm the containers are present.
-- Opened a browser and navigated to localhost:8080 and accessed the 
+- Opened a browser and navigated to localhost:8080
 
 
 ## What is a Database?
