@@ -46,9 +46,23 @@
 ### Commands learned
 
 #### VARCHAR
+- **Example:** CREATE TABLE breakfast_menu (customer_name VARCHAR(10))
+  - This creates a table named 'breakfast_menu', and a column in the table titled 'customer_name'.
+  - VARCHAR (10) means all data in this column must be 'text type' with the number of characters limited to 10.
+- Full meaning is Variable Character.
+- Used to store strings of variable length.
 #### TEXT
+- **Example:** CREATE TABLE breakfast_menu (customer_name VARCHAR(10), dish_name TEXT)
+  - This adds a column in the table titled 'dish_name'.
+  - TEXT means all data in this column must be 'text type'.
 #### INTEGER
+- **Example:** CREATE TABLE breakfast_menu (customer_name VARCHAR(10), dish_name TEXT, price INT)
+  - This adds a column in the table titled 'price'.
+  - INT means all data in this column must be an integer.
 #### ENUM
+- **Example:** CREATE TABLE breakfast_menu (customer_name VARCHAR(10), dish_name TEXT, price INT, avg_rating ENUM(bad, good, excellent))
+  - This adds a column in the table titled 'avg_rating'.
+  - ENUM means all data in this column must be chosen from one of the permitted values in the brackets().
 
 ## What is a Table
 - A structured format for organizing data within a database, consisting of rows and columns that form a grid-like structure.
