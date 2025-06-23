@@ -25,7 +25,7 @@
 #### CREATE DATABASE IF NOT EXISTS
 - **Example:** CREATE DATABASE IF NOT EXISTS food
 - This will create a database named 'food' and if it already exists, it does not show any errors, and just moves on.
-- 'IF NOT EXISTS' is added to prevent an error showing up if the cars database already exists.
+- 'IF NOT EXISTS' is added to prevent an error showing up if the food database already exists.
 
 #### SHOW DATABASES
 - List the available databases
