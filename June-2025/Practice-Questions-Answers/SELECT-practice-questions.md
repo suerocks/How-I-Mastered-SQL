@@ -96,3 +96,23 @@
 
 **Answers:** https://github.com/suerocks/How-I-Mastered-SQL/blob/9e232e48e8009c07f20ee56b3ad4a56f1a51a494/June-2025/Practice-Questions-Answers/SELECT-practice-answers.sql
 
+## AS Alias
+
+#### Task 6: Change the 'customer_id' name to 'id' temporarily
+- Your table should look like this
+
+<br>
+
+|id|customer_name|dish_name|price|
+|---|---|---|---|
+|1|Sarah|pancakes|4|
+|2|Michael|oatmeal|8|
+|3|Brian|scrambled eggs|3|
+|4|Zoro|yam porridge|10|
+|5|Tim|chocolate sundae|5|
+|6|Afia|greek salad|6|
+|7|Godwin|oatmeal|8|
+|8|Ade|yam porridge|10|
+|9|Ra|pancakes|4|
+|10|Sue|coffee|1|
+
