@@ -15,3 +15,7 @@ WHERE price = 10;
 
 SELECT customer_id, price FROM breakfast_menu
 WHERE customer_id=price;
+
+-- Task 6: Change the 'customer_id' name to 'id' temporarily
+
+SELECT customer_id AS id, customer_name, dish_name, price FROM breakfast_menu;
