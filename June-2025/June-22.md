@@ -22,7 +22,7 @@
 - Creates a database named 'food'.
 - Creates a database.
 
-#### CREATE DATABASE IF NOT EXISTS food
+#### CREATE DATABASE IF NOT EXISTS
 - **Example:** CREATE DATABASE IF NOT EXISTS food
 - This will create a database named 'food' and if it already exists, it does not show any errors, and just moves on.
 - 'IF NOT EXISTS' is added to prevent an error showing up if the cars database already exists.
