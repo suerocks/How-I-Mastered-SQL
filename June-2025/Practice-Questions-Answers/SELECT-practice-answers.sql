@@ -19,3 +19,8 @@ WHERE customer_id=price;
 -- Task 6: Change the 'customer_id' name to 'id' temporarily
 
 SELECT customer_id AS id, customer_name, dish_name, price FROM breakfast_menu;
+
+-- Task 7: Change Zoro's dish to 'chicken fries'
+
+UPDATE breakfast_menu SET dish_name = 'chicken fries'
+WHERE customer_name = 'Zoro';
