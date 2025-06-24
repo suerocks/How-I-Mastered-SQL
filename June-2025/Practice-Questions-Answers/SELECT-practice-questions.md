@@ -48,7 +48,7 @@
 <br>
 
 #### Task 3: Show only the customer_name and dish_name columns
-- Your table should look like this
+- Your table should look like this.
 
 <br>
 
@@ -70,7 +70,7 @@
 ### No More Hints!!
 
 #### Task 4: Show the table below
-- Your table should look like this
+- Your table should look like this.
 
 <br>
 
@@ -82,7 +82,7 @@
 <br>
 
 #### Task 5: Show the table below
-- Your table should look like this
+- Your table should look like this.
 
 <br>
 
@@ -99,7 +99,7 @@
 ## AS Alias
 
 #### Task 6: Change the 'customer_id' name to 'id' temporarily
-- Your table should look like this
+- Your table should look like this.
 
 <br>
 
@@ -116,3 +116,24 @@
 |9|Ra|pancakes|4|
 |10|Sue|coffee|1|
 
+<br>
+
+## UPDATE SET
+
+#### Task 7: Change Zoro's dish to 'chicken fries'
+- Your table should look like this.
+
+<br>
+
+|customer_id|customer_name|dish_name|price|
+|---|---|---|---|
+|1|Sarah|pancakes|4|
+|2|Michael|oatmeal|8|
+|3|Brian|scrambled eggs|3|
+|4|Zoro|**chicken fries**|10|
+|5|Tim|chocolate sundae|5|
+|6|Afia|greek salad|6|
+|7|Godwin|oatmeal|8|
+|8|Ade|yam porridge|10|
+|9|Ra|pancakes|4|
+|10|Sue|coffee|1|
