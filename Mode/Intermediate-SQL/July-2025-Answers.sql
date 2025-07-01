@@ -14,3 +14,8 @@ SELECT COUNT(date) AS date,
        COUNT(volume) AS volume,
        COUNT(id) AS id
 FROM tutorial.aapl_historical_stock_price
+
+--3.
+
+SELECT SUM(open)/COUNT(open) AS avg_open_price
+FROM tutorial.aapl_historical_stock_price
