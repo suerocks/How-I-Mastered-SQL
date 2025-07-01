@@ -73,3 +73,13 @@ ORDER BY year_rank, artist
 
 --15.
 
+SELECT * FROM tutorial.billboard_top_100_year_end
+WHERE group_name ILIKE '%T-Pain%'
+ORDER BY year_rank DESC
+
+--16.
+
+SELECT * FROM tutorial.billboard_top_100_year_end
+WHERE year_rank BETWEEN 10 AND 20 -- only outputs results for songs ranked between 10 and 20 
+AND year IN (1993, 2003, 2013) -- only outputs results for songs released in the year 1993, 2003, and 2013
+ORDER BY year, year_rank
