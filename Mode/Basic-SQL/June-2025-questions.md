@@ -37,10 +37,12 @@ https://mode.com/sql-tutorial/sql-or-operator
 
 ### SQL NOT
 https://mode.com/sql-tutorial/sql-not-operator
+
 12. Write a query that returns all rows for songs that were on the charts in 2013 and do not contain the letter "a".
 
 ### SQL ORDER BY
 https://mode.com/sql-tutorial/sql-order-by
+
 13. Write a query that returns all rows from 2012, ordered by song title from Z to A.
 14. Write a query that returns all rows from 2010 ordered by rank, with artists ordered alphabetically for each song.
 15. Write a query that shows all rows for which T-Pain was a group member, ordered by rank on the charts, from lowest to highest rank (from 100 to 1).
