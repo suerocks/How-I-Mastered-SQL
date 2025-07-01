@@ -95,3 +95,43 @@ ORDER BY jr_sr_player_name
 
 --13.
 
+SELECT CASE 
+       WHEN state IN ('CA', 'OR', 'WA') THEN 'west_coast'
+       WHEN state = 'TX' THEN 'texas'
+       ELSE 'other_state' END AS player_state,
+       COUNT(weight) AS player_weight_300_plus
+FROM benn.college_football_players
+WHERE weight >= 300
+GROUP BY player_state
+
+--14.
+
+SELECT CASE 
+          WHEN year IN ('FR', 'SO') THEN 'fr_so_year'
+          WHEN year IN ('JR', 'SR') THEN 'jr_sr_year'
+          ELSE NULL END AS select_year,
+       SUM(weight) AS combined_weight
+FROM benn.college_football_players
+WHERE state = 'CA'
+GROUP BY select_year
+
+--15.
+
+SELECT state,
+       COUNT(CASE WHEN year = 'FR' THEN 'FR' ELSE NULL END) AS fr,
+       COUNT(CASE WHEN year = 'SO' THEN 'SO' ELSE NULL END) AS so,
+       COUNT(CASE WHEN year = 'JR' THEN 'JR' ELSE NULL END) AS jr,
+       COUNT(CASE WHEN year = 'SR' THEN 'SR' ELSE NULL END) AS sr,
+       COUNT(state) AS total_count
+FROM benn.college_football_players
+GROUP BY state
+ORDER BY total_count DESC
+
+--16.
+
+SELECT COUNT(CASE WHEN school_name < 'N' THEN 'a_m' ELSE NULL END) AS a_m_list,
+       COUNT(CASE WHEN school_name > 'N' THEN 'n_z' ELSE NULL END) AS n_z_list
+FROM benn.college_football_players
+ORDER BY a_m_list
+
+--17.
