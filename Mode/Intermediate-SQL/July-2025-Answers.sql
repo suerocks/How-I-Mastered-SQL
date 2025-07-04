@@ -135,3 +135,20 @@ FROM benn.college_football_players
 ORDER BY a_m_list
 
 --17.
+
+SELECT DISTINCT year
+FROM tutorial.aapl_historical_stock_price
+
+--18.
+
+SELECT year,
+       COUNT(DISTINCT(month)) AS month_count
+FROM tutorial.aapl_historical_stock_price
+GROUP BY year
+
+--19.
+
+SELECT COUNT(DISTINCT(year)) AS year_count,
+       COUNT(DISTINCT(month)) AS month_count
+FROM tutorial.aapl_historical_stock_price
+ORDER BY year_count
