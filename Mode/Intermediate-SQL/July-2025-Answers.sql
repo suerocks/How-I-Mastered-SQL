@@ -152,3 +152,26 @@ SELECT COUNT(DISTINCT(year)) AS year_count,
        COUNT(DISTINCT(month)) AS month_count
 FROM tutorial.aapl_historical_stock_price
 ORDER BY year_count
+
+--20.
+
+SELECT players.school_name AS school_name,
+       players.player_name AS player_name,
+       players.position AS position,
+       players.weight AS weight
+FROM benn.college_football_players players
+WHERE players.state = 'GA'
+ORDER BY players.weight
+
+--21.
+
+SELECT players.player_name,
+       players.school_name,
+       teams.conference 
+FROM benn.college_football_players players
+  JOIN benn.college_football_teams teams
+    ON teams.school_name = players.school_name
+WHERE division = 'FBS (Division I-A Teams)'
+
+--22.
+
