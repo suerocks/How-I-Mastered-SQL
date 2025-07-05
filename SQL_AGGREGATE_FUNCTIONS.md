@@ -14,7 +14,7 @@ Aggregate functions process a group of rows and produce a single value. The most
 
 These functions are vital for summarizing data, such as calculating totals, averages, or counts.
 
-## Why GROUP BY is Required
+## The Role of GROUP BY
 
 When aggregate functions are used in a `SELECT` statement, SQL needs to know how to group rows for the calculation. The `GROUP BY` clause organizes rows into groups based on one or more columns, allowing aggregate functions to be applied to each group.
 
