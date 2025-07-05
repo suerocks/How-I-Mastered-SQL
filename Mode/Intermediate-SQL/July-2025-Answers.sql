@@ -175,3 +175,31 @@ WHERE division = 'FBS (Division I-A Teams)'
 
 --22.
 
+SELECT COUNT(acquisitions.company_permalink) AS a_permalink,
+       COUNT(companies.permalink) AS c_permalink
+FROM tutorial.crunchbase_acquisitions acquisitions
+JOIN tutorial.crunchbase_companies companies
+  ON acquisitions.company_permalink = companies.permalink
+
+--23.
+
+SELECT COUNT(acquisitions.company_permalink) AS a_permalink,
+       COUNT(companies.permalink) AS c_permalink
+FROM tutorial.crunchbase_acquisitions acquisitions
+LEFT JOIN tutorial.crunchbase_companies companies
+  ON acquisitions.company_permalink = companies.permalink
+
+--24.
+
+SELECT COUNT(DISTINCT(acquisitions.company_name)) AS acquired_name_count,
+       COUNT(DISTINCT(companies.name)) AS company_name_count,
+       state_code
+FROM tutorial.crunchbase_companies companies
+LEFT JOIN tutorial.crunchbase_acquisitions acquisitions
+  ON companies.name = acquisitions.company_name
+WHERE state_code IS NOT NULL
+GROUP BY state_code
+ORDER BY acquired_name_count DESC
+
+--25.
+
