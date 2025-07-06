@@ -17,6 +17,8 @@
 14. https://www.hackerrank.com/challenges/weather-observation-station-11/problem?isFullScreen=true
 15. https://www.hackerrank.com/challenges/weather-observation-station-12/problem?isFullScreen=true
 16. https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true
+17. https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=true
+18. 
 
 <br>
 
