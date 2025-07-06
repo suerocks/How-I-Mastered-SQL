@@ -5,3 +5,4 @@ WHERE group_name ILIKE '%ludacris%' -- This narrows down the table to show only 
 WHERE group_name ILIKE 'DJ%' -- This narrows down the table to show only the row(s) where the column named 'group_name' contains the term 'DJ'. The position of the % sign means there can be characters present on only the right side of 'DJ'.
 
 WHERE group_name IN ('Elvis Presley', 'M.C. Hammer', 'Hammer') -- This narrows down the table to show only the rows where the column named 'group_name) contains either 'Elvis Presley', 'M.C. Hammer', or 'Hammer'.
+
