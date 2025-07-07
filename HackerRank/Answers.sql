@@ -105,3 +105,8 @@ SELECT Name
 FROM STUDENTS
 WHERE Marks > 75
 ORDER BY RIGHT(Name, 3), ID
+
+--17.
+SELECT name
+FROM Employee
+ORDER BY name ASC
