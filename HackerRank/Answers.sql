@@ -107,6 +107,21 @@ WHERE Marks > 75
 ORDER BY RIGHT(Name, 3), ID
 
 --17.
+   
 SELECT name
 FROM Employee
 ORDER BY name ASC
+
+--18.
+   
+SELECT name_occupation
+FROM (
+SELECT CONCAT(Name, '(', LEFT(Occupation, 1), ')') AS name_occupation FROM OCCUPATIONS
+UNION
+SELECT CONCAT('There are a total of ', COUNT(Occupation), ' ', LOWER(Occupation), 's.') AS count_occupation
+FROM OCCUPATIONS GROUP BY Occupation) AS combination
+ORDER BY name_occupation
+
+--19.
+
+
