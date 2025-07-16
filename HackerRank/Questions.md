@@ -19,7 +19,7 @@
 16. https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true
 17. https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=true
 18. https://www.hackerrank.com/challenges/the-pads/problem?isFullScreen=true
-19. 
+19. https://www.hackerrank.com/challenges/what-type-of-triangle/problem
 
 <br>
 
